@@ -70,3 +70,53 @@ dataset?
 them into the latent space, and then generate images by interpolating between 
 these two latent vectors. Visualize the interpolated images. Comment on how 
 smoothly the images change as you move through the latent space.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+## **Option 1: Install PyTorch (Recommended)**
+
+Run this command depending on your system:
+
+### **If using CPU (normal laptop/PC):**
+
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+### **If using GPU with CUDA 12.1:**
+
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+### **If using Google Colab:**
+
+PyTorch is already installed—just restart your runtime and run the code again.
+
+---
+
+#  Option 2: Use `pip install torch` (works for most)
+
+```bash
+pip install torch torchvision
+```
+
+---
+
+# How to verify installation
+
+Run:
+
+```python
+import torch
+print(torch.__version__)
+print("CUDA available:", torch.cuda.is_available())
+```
+
+#  If you're using Jupyter Notebook
+
+After installation, restart the kernel:
+
+```
+Kernel → Restart
+```
