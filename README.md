@@ -1,11 +1,15 @@
-# -Variational-Autoencoder-VAE-
+# Variational Autoencoder (VAE)
 
 Objective: To implement a VAE, train it on a dataset of your choice (e.g., MNIST, Fashion
 MNIST, or a dataset of images), and generate new samples from the learned latent space. 
 Dataset: Choose one of the following datasets: 
+
 • MNIST: Handwritten digits (0-9). 
+
 • Fashion-MNIST: Images of clothing items. 
+
 • (Optional) CIFAR-10: More complex color images of various objects. 
+
 Tools: Use TensorFlow, PyTorch, or another deep learning framework you are familiar with. 
 
 Part 1: Data Preparation and Exploration
