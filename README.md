@@ -73,50 +73,54 @@ smoothly the images change as you move through the latent space.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## **Option 1: Install PyTorch (Recommended)**
+To proceed,   We **must install PyTorch first** — otherwise, none of your code will run.
 
-Run this command depending on your system:
+### **If you're on Google Colab**
 
-### **If using CPU (normal laptop/PC):**
+Run this first cell:
+
+```python
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+or simply:
+
+```python
+!pip install torch torchvision
+```
+
+Then **restart the runtime**:
+
+```
+Runtime → Restart runtime
+```
+
+### **If you're on Jupyter Notebook / VS Code / Local PC**
+
+Open a terminal and run:
+
+#### **CPU version (recommended if you don’t have a GPU)**
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
-### **If using GPU with CUDA 12.1:**
+#### **GPU version (CUDA 12.1)**
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-### **If using Google Colab:**
-
-PyTorch is already installed—just restart your runtime and run the code again.
-
 ---
 
-#  Option 2: Use `pip install torch` (works for most)
+# Verify installation
 
-```bash
-pip install torch torchvision
-```
-
----
-
-# How to verify installation
-
-Run:
+Run this:
 
 ```python
 import torch
-print(torch.__version__)
+print("PyTorch version:", torch.__version__)
 print("CUDA available:", torch.cuda.is_available())
 ```
 
-#  If you're using Jupyter Notebook
-
-After installation, restart the kernel:
-
-```
-Kernel → Restart
-```
+If this runs without error, PyTorch is correctly installed.
